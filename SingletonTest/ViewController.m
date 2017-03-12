@@ -7,6 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "YKHttpTool.h"
+#import "YKDataTool.h"
+
 
 @interface ViewController ()
 
@@ -16,7 +19,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    YKDataTool *h1 = [YKDataTool shareDataTool];
+    YKDataTool *h2 = [YKDataTool shareDataTool];
+    YKDataTool *h3 = [h2 copy];
+    YKDataTool *h4 = [h3 mutableCopy];
+
+    NSLog(@"%p,%p,%p,%p",h1,h2,h3,h4);
 }
 
 

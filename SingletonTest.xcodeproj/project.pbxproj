@@ -15,6 +15,8 @@
 		B290F15B1E740BFB002C9BF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B290F1591E740BFB002C9BF2 /* LaunchScreen.storyboard */; };
 		B290F1661E740BFB002C9BF2 /* SingletonTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B290F1651E740BFB002C9BF2 /* SingletonTestTests.m */; };
 		B290F1711E740BFB002C9BF2 /* SingletonTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B290F1701E740BFB002C9BF2 /* SingletonTestUITests.m */; };
+		B290F1801E740C1F002C9BF2 /* YKHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B290F17F1E740C1F002C9BF2 /* YKHttpTool.m */; };
+		B290F1861E74175C002C9BF2 /* YKDataTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B290F1851E74175C002C9BF2 /* YKDataTool.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,11 @@
 		B290F16C1E740BFB002C9BF2 /* SingletonTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SingletonTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B290F1701E740BFB002C9BF2 /* SingletonTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingletonTestUITests.m; sourceTree = "<group>"; };
 		B290F1721E740BFB002C9BF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B290F17E1E740C1F002C9BF2 /* YKHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKHttpTool.h; sourceTree = "<group>"; };
+		B290F17F1E740C1F002C9BF2 /* YKHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKHttpTool.m; sourceTree = "<group>"; };
+		B290F1831E7412CA002C9BF2 /* Singleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		B290F1841E74175C002C9BF2 /* YKDataTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKDataTool.h; sourceTree = "<group>"; };
+		B290F1851E74175C002C9BF2 /* YKDataTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKDataTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +117,11 @@
 				B290F1591E740BFB002C9BF2 /* LaunchScreen.storyboard */,
 				B290F15C1E740BFB002C9BF2 /* Info.plist */,
 				B290F14B1E740BFB002C9BF2 /* Supporting Files */,
+				B290F17E1E740C1F002C9BF2 /* YKHttpTool.h */,
+				B290F17F1E740C1F002C9BF2 /* YKHttpTool.m */,
+				B290F1831E7412CA002C9BF2 /* Singleton.h */,
+				B290F1841E74175C002C9BF2 /* YKDataTool.h */,
+				B290F1851E74175C002C9BF2 /* YKDataTool.m */,
 			);
 			path = SingletonTest;
 			sourceTree = "<group>";
@@ -277,6 +289,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B290F1531E740BFB002C9BF2 /* ViewController.m in Sources */,
+				B290F1861E74175C002C9BF2 /* YKDataTool.m in Sources */,
+				B290F1801E740C1F002C9BF2 /* YKHttpTool.m in Sources */,
 				B290F1501E740BFB002C9BF2 /* AppDelegate.m in Sources */,
 				B290F14D1E740BFB002C9BF2 /* main.m in Sources */,
 			);
@@ -341,7 +355,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -389,7 +403,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -427,6 +441,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				DEVELOPMENT_TEAM = LRJBN79GXB;
 				INFOPLIST_FILE = SingletonTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -439,6 +454,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				DEVELOPMENT_TEAM = LRJBN79GXB;
 				INFOPLIST_FILE = SingletonTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
